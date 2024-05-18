@@ -1,0 +1,36 @@
+{
+	"id": "GameSimulator",
+	"displayName": "Game Simulator",
+	"description": "A LUA interpreter with Wwise SDK bindings.",
+	"imagePath": "GameSimulator.png",
+	"wwiseProjectFilePath": null,
+	"demos": [
+		{
+			"displayName": "Run Game Simulator (vc140/x64/Profile)",
+			"filePath": "x64_vc140/GameSimulatorPCx64_Profile.exe",
+			"platform": "windows"
+		},
+		{
+			"displayName": "Run Game Simulator (vc150/x64/Profile)",
+			"filePath": "x64_vc150/GameSimulatorPCx64_Profile.exe",
+			"platform": "windows"
+		},
+		{
+			"displayName": "Run Game Simulator (vc160/x64/Profile)",
+			"filePath": "x64_vc160/GameSimulatorPCx64_Profile.exe",
+			"platform": "windows"
+		},
+		{
+			"displayName": "Run Game Simulator (Profile)",
+			"filePath": "Mac/GameSimulatorMac_Profile",
+			"platform": "osx"
+		}
+	],
+	"documentation": [
+		{
+			"language": "en",
+			"displayName": "View Documentation",
+			"filePath": "Help/GameSimulator.chm"
+		}
+	]
+}

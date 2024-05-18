@@ -1,0 +1,136 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1656055475	Map_Completed			\Music\Map_Completed	
+	1815461482	Story_End			\Music\Story_End	
+	2415014760	Monsters_Unaware			\Music\Monsters_Unaware	
+	2778113369	Story_Start			\Music\Story_Start	
+	2985974755	Boss_Start			\Music\Boss_Start	
+	3430883159	Monsters_Aware			\Music\Monsters_Aware	
+	3991942870	Music			\Music\Music	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2702523344	Gameplay_Switch			\Music\Gameplay_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	579523862	Explore	Gameplay_Switch			
+	2764240573	Combat	Gameplay_Switch			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	444815956	PlayerLife			\Default Work Unit\PlayerLife	Player is alive or defeated.
+	1771987172	PlayerHasSuperGem			\Default Work Unit\PlayerHasSuperGem	Player is in super magic mode.
+	3826569560	Music_State			\Music\Music_State	
+
+State	ID	Name	State Group			Notes
+	655265632	Alive	PlayerLife			
+	748895195	None	PlayerLife			
+	2791675679	Defeated	PlayerLife			
+	748895195	None	PlayerHasSuperGem			
+	979470758	Yes	PlayerHasSuperGem			
+	1668749452	No	PlayerHasSuperGem			
+	89505537	Gameplay	Music_State			
+	748895195	None	Music_State			
+	1560169506	Boss	Music_State			
+	1686739444	Story	Music_State			
+	2716678721	Victory	Music_State			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	38933209	No	PlayerHasSuperGem	\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Arpeggio1_138bpm4-4-L8M-P0		
+	543777673	No	PlayerHasSuperGem	\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Arpeggio1_138bpm4-4-L8M-P0		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2	CC #1: Modulation			\CC 0-31\CC #1: Modulation	
+	151362964	PlayerHealth			\Default Work Unit\PlayerHealth	
+	3963624107	EnemyAware			\Music\EnemyAware	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	274311271	Synth Vibrato			\Default Work Unit\Synth Vibrato	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	17646280	Modulator Envelope (Custom)				
+	395999090	Modulator Envelope (Custom)				
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	2077047193	Cymbal_Swell			\Music\Cymbal_Swell	
+	3371734183	Health_Cue			\Music\Health_Cue	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	383507418	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Music\Melody Synth\Wwise Synth One	
+	742147924	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Music\Arpeggio Synth\Wwise Synth One	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1419702	Explore-Theme_138bpm4-4_L16M-P1M	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Explore-Theme_138bpm4-4_L16M-P1M_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Explore\Explore-Theme_138bpm4-4_L16M-P1M\Explore-Theme_138bpm4-4_L16M-P1M		481961
+	12004582	Boss-C-Melody_155bpm4-4_L24M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-C-Melody_155bpm4-4_L24M-P1B_7F09F7E6.wmid		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-C\Boss-C-Melody_155bpm4-4_L24M-P1B		10842
+	13403689	Combat-A-Arpeggio1_138bpm4-4-L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Arpeggio_138bpm4-4-L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Arpeggio1_138bpm4-4-L8M-P0		294170
+	18631103	Story-Main_90bpm4-4_L24M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Story-Main_90bpm4-4_L24M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Story\Story-Main\Story-Main_90bpm4-4_L24M-P0		1027730
+	52659235	Combat-B-Gtr1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Gtr3_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Gtr1_138bpm4-4_L8M-P0		187059
+	63120975	Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-Bridge\Combat-Bridge-Gtr3_138bpm4-4_L17M-P1B_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-Bridge\Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B		495909
+	89540310	Boss-B_155bpm3-4_L1M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-B_155bpm3-4_L1M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-B\Boss-B_155bpm3-4_L1M-P0		68007
+	99497700	Combat-A-Bass1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Bass2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Bass1_138bpm4-4_L8M-P0		35956
+	107459105	Boss-Intro_155bpm4-4_L10M-P1M	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-Intro_155bpm4-4_L10M-P1M_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-Intro\Boss-Intro_155bpm4-4_L10M-P1M		353951
+	129500983	Suling_D#5	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D Suling Samples\Suling_D#5_942605B7.wem		\Actor-Mixer Hierarchy\Music\Boss-D Suling Samples\Suling_D#5		594678
+	130302594	Suling_B4	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D Suling Samples\Suling_B4_942605B7.wem		\Actor-Mixer Hierarchy\Music\Boss-D Suling Samples\Suling_B4		594676
+	154786092	Combat-AB-Rhythm-HiHat_138bpm4-4_L4M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-AB-Rhythm-HiHat_138bpm4-4_L4M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-AB-Rhythm-HiHat_138bpm4-4_L4M-P0		100453
+	161231535	Suling_G#4	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D Suling Samples\Suling_G#4_942605B7.wem		\Actor-Mixer Hierarchy\Music\Boss-D Suling Samples\Suling_G#4		594678
+	179443668	Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-Bridge\Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-Bridge\Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B		317226
+	179789701	Story-TransFromStory_138bpm4-4_L5M-P1M	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Story-TransFromStory_138bpm4-4_L5M-P1M_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Story\Story-TransFromStory_138bpm4-4_L5M-P1M\Story-TransFromStory_138bpm4-4_L5M-P1M		228417
+	203688436	Combat-B-Strings1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Strings2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Strings1_138bpm4-4_L8M-P0		223506
+	220964742	Victory-138bpm4-4_L4M-P1M	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Victory-138bpm4-4_L4M-P1M_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Victory\Victory-138bpm4-4_L4M-P1M\Victory-138bpm4-4_L4M-P1M		184441
+	230787642	Combat-A-HighChoir_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-HighChoir_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-HighChoir_138bpm4-4_L8M-P0		238282
+	236631585	Combat-B-Gtr1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Gtr2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Gtr1_138bpm4-4_L8M-P0		260462
+	286680082	Combat-B-Bass1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Bass1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Bass1_138bpm4-4_L8M-P0		86193
+	303631287	Combat-A-LowChoir_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-LowChoir_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-LowChoir_138bpm4-4_L8M-P0		250788
+	305619586	Combat-B-LowBrass_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-LowBrass_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-LowBrass_138bpm4-4_L8M-P0		217890
+	335867805	Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D-Sampler-Suling3_155bpm4-4_L8M-P0_34723536.wmid		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-D\Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0		371
+	336972404	Combat-A-Synth1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Synth1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Synth1_138bpm4-4_L8M-P0		183266
+	337307488	Boss-A_155bpm4-4_L16M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-A_155bpm4-4_L16M-P1B_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-A\Boss-A_155bpm4-4_L16M-P1B		439394
+	346070103	Combat-B-Synth1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Synth1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Synth1_138bpm4-4_L8M-P0		187143
+	347516780	Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D-Sampler-Suling2_155bpm4-4_L8M-P0_7731073B.wmid		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-D\Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0		331
+	362791436	Combat-A-Gtr1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Gtr2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Gtr1_138bpm4-4_L8M-P0		231229
+	385197388	Boss-D_155bpm4-4_L8M-P1M	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D_155bpm4-4_L8M-P1M_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-D\Boss-D_155bpm4-4_L8M-P1M		279346
+	439077725	Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-Bridge\Combat-Bridge-Gtr2_138bpm4-4_L17M-P1B_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-Bridge\Combat-Bridge-Gtr1_138bpm4-4_L17M-P1B		495909
+	448522076	Explore-Piano_138bpm4-4_L16M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Explore-Piano_138bpm4-4_L16M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Explore\Explore-Piano_138bpm4-4_L16M-P0\Explore-Piano_138bpm4-4_L16M-P0		501185
+	501409898	Explore-Rhythm_138bpm4-4_L16M-P1M	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Explore-Rhythm_138bpm4-4_L16M-P1M_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Explore\Explore-Rhythm_138bpm4-4_L16M-P1M\Explore-Rhythm_138bpm4-4_L16M-P1M		470175
+	517572505	Combat-A-LowBrass_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-LowBrass_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-LowBrass_138bpm4-4_L8M-P0		217141
+	555448355	Combat-A-Bass1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Bass1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Bass1_138bpm4-4_L8M-P0		87938
+	557799513	Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0_BE1FC8A5.wem		\Interactive Music Hierarchy\Music\Stingers\Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0\Stinger-ExploreCombatMain-Health_138bpm4-4_L1M_P0		417488
+	577541834	Story-Main-Cello1_90bpm4-4_L24M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Story-Main-Cello1_90bpm4-4_L24M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Story\Story-Main\Story-Main-Cello1_90bpm4-4_L24M-P0		489733
+	606641429	Story-Main-Cello1_90bpm4-4_L24M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Story-Main-Cello2_90bpm4-4_L24M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Story\Story-Main\Story-Main-Cello1_90bpm4-4_L24M-P0		500113
+	610556538	Suling_A#4	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D Suling Samples\Suling_A#4_942605B7.wem		\Actor-Mixer Hierarchy\Music\Boss-D Suling Samples\Suling_A#4		594678
+	620540136	Boss-A-Melody_155bpm4-4_L16M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-A-Melody_155bpm4-4_L16M-P1B_21761E5D.wmid		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-A\Boss-A-Melody_155bpm4-4_L16M-P1B		5840
+	622437083	Combat-A-StaccStrings1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-StaccStrings2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-StaccStrings1_138bpm4-4_L8M-P0		185528
+	643930587	Combat-AB-Rhythm-Main_138bpm4-4_L4M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-AB-Rhythm-Main_138bpm4-4_L4M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-AB-Rhythm-Main_138bpm4-4_L4M-P0		124075
+	647307052	Combat-A-Strings1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Strings2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Strings1_138bpm4-4_L8M-P0		224707
+	676048771	Defeated-138bpm4-4_L4M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Defeated-138bpm4-4_L4M-P0_775CB38D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Defeated\Defeated-138bpm4-4_L4M-P0\Defeated-138bpm4-4_L4M-P0		117637
+	677898224	Combat-B-Synth1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Synth2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Synth1_138bpm4-4_L8M-P0		189321
+	691913718	Combat-A-Gtr1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Gtr1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Gtr1_138bpm4-4_L8M-P0		144690
+	719466347	Combat-B-Strings1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Strings1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Strings1_138bpm4-4_L8M-P0		254367
+	735986005	Combat-A-Gtr1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Gtr3_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Gtr1_138bpm4-4_L8M-P0		183260
+	759921048	Explore-TransToBridge_138bpm3-4_L3M-P1M	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Explore-TransToBridge_138bpm3-4_L3M-P1M_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Explore\Explore-TransToBridge_138bpm3-4_L3M-P1M\Explore-TransToBridge_138bpm3-4_L3M-P1M		152575
+	768301452	Combat-B-HighChoir_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-HighChoir_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-HighChoir_138bpm4-4_L8M-P0		239380
+	805043304	Stinger-CymbalSwell_138bpm4-4_L0-P3B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Stinger-CymbalSwell_138bpm4-4_L0-P3B_BE1FC8A5.wem		\Interactive Music Hierarchy\Music\Stingers\Stinger-CymbalSwell_138bpm4-4_L0-P3B\Stinger-CymbalSwell_138bpm4-4_L0-P3B		537030
+	826943641	Explore-Bridge_138bpm4-4_L17M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Explore-Bridge_138bpm4-4_L17M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Explore\Explore-Bridge_138bpm4-4_L17M-P0\Explore-Bridge_138bpm4-4_L17M-P0		552916
+	837921331	Combat-Bridge-Main_138bpm4-4_L17M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-Bridge\Combat-Bridge-Main_138bpm4-4_L17M-P1B_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-Bridge\Combat-Bridge-Main_138bpm4-4_L17M-P1B		635926
+	844137386	Boss-C_155bpm4-4_L24M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-C_155bpm4-4_L24M-P1B_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-C\Boss-C_155bpm4-4_L24M-P1B		719405
+	858802908	Combat-B-Arpeggio1_138bpm4-4-L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Arpeggio_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Arpeggio1_138bpm4-4-L8M-P0		293216
+	860952170	Suling_C#5	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D Suling Samples\Suling_C#5_942605B7.wem		\Actor-Mixer Hierarchy\Music\Boss-D Suling Samples\Suling_C#5		594676
+	861808133	Combat-B-Gtr1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Gtr1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Gtr1_138bpm4-4_L8M-P0		191255
+	868520681	Combat-A-Strings1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Strings1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Strings1_138bpm4-4_L8M-P0		261359
+	871914401	Suling_F#4	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D Suling Samples\Suling_F#4_942605B7.wem		\Actor-Mixer Hierarchy\Music\Boss-D Suling Samples\Suling_F#4		594678
+	874900691	Boss-C-Arpeggio_155bpm4-4_L24M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-C-Arpeggio_155bpm4-4_L24M-P1B_4CC5D369.wmid		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-C\Boss-C-Arpeggio_155bpm4-4_L24M-P1B		2481
+	891764373	Combat-TransToBridge_138bpm3-4_L3M-P1M	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-TransToBridge_138bpm3-4_L3M-P1M_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-TransToBridge_138bpm3-4_L3M-P1M\Combat-TransToBridge_138bpm3-4_L3M-P1M		179143
+	895343997	Combat-B-StaccStrings1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-StaccStrings1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-StaccStrings1_138bpm4-4_L8M-P0		203465
+	895844321	Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0_BE1FC8A5.wem		\Interactive Music Hierarchy\Music\Stingers\Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0\Stinger-ExploreCombatBridge-Health_138bpm4-4_L1M_P0		417488
+	897433594	Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D-Sampler-Suling5 _155bpm4-4_L8M-P0_D24F709E.wmid		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-D\Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0		845
+	941787895	Suling_F#5	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D Suling Samples\Suling_F#5_942605B7.wem		\Actor-Mixer Hierarchy\Music\Boss-D Suling Samples\Suling_F#5		594678
+	952053543	Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D-Sampler-Suling4_155bpm4-4_L8M-P0_D541E873.wmid		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-D\Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0		418
+	971254882	Story-TransToStory_90bpm4-4_L4M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Story-TransToStory_90bpm4-4_L4M-P1B_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Story\Story-TransToStory_90bpm4-4_L4M-P1B\Story-TransToStory_90bpm4-4_L4M-P1B		249213
+	999236619	Combat-B-StaccStrings1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-StaccStrings2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-StaccStrings1_138bpm4-4_L8M-P0		208018
+	1009184880	Combat-A-Synth1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-Synth2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-Synth1_138bpm4-4_L8M-P0		163869
+	1015885533	Combat-A-StaccStrings1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-A\Combat-A-StaccStrings1_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-A-StaccStrings1_138bpm4-4_L8M-P0		203800
+	1017436128	Combat-B-Bass1_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-Bass2_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-Bass1_138bpm4-4_L8M-P0		54985
+	1020841823	Combat-AB-Rhythm-PercPulse_138bpm4-4_L4M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-AB-Rhythm-PercPulse_138bpm4-4_L4M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-A\Combat-AB-Rhythm-PercPulse_138bpm4-4_L4M-P0		110623
+	1025425568	Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0_3E007A10.wmid		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-D\Boss-D-Sampler-Suling1_155bpm4-4_L8M-P0		395
+	1035456180	Boss-A-Arpeggio_155bpm4-4_L16M-P1B	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-A-Arpeggio_155bpm4-4_L16M-P1B_22FD72FD.wmid		\Interactive Music Hierarchy\Music\Wwise 201 Music\Boss\Boss-A\Boss-A-Arpeggio_155bpm4-4_L16M-P1B		1582
+	1050972514	Explore-Arpeggio_138bpm4-4_L16M-P1M	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Explore-Arpeggio_138bpm4-4_L16M-P1M_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Explore\Explore-Arpeggio_138bpm4-4_L16M-P1M\Explore-Arpeggio_138bpm4-4_L16M-P1M		556086
+	1059808507	Suling_F5	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Boss-D Suling Samples\Suling_F5_942605B7.wem		\Actor-Mixer Hierarchy\Music\Boss-D Suling Samples\Suling_F5		594678
+	1066657324	Combat-B-LowChoir_138bpm4-4_L8M-P0	C:\Jenkins\ws\wwise_v2021.1\Cube\WwiseProject\.cache\Windows\SFX\Combat-B-LowChoir_138bpm4-4_L8M-P0_8758A51D.wem		\Interactive Music Hierarchy\Music\Wwise 201 Music\Combat\Combat-B\Combat-B-LowChoir_138bpm4-4_L8M-P0		251224
+
